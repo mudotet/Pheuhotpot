@@ -441,53 +441,84 @@
 
             
         
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-    const menu = document.querySelector('.menu-a');
-    const menu_1 = document.querySelector('.menu-ul');
-    const cart = document.querySelector('.gio-hang');
-    const cartButton = document.querySelector('.cua-toi');
-    let menu_visible = false;
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menu = document.querySelector('.menu-a');
+            const menu_1 = document.querySelector('.menu-ul');
+            const cart = document.querySelector('.gio-hang');
+            const cartButton = document.querySelector('.cua-toi');
+            let menuVisible = false;
 
-    menu.addEventListener("click", function(event) {
-        event.stopPropagation();  // Ngăn không cho sự kiện click lan tỏa ra ngoài
-        menu_1.style.display = menu_visible ? "none" : "block";
-        menu_visible = !menu_visible;
-    });
+            menu.addEventListener("click", function(event) {
+                event.stopPropagation();
+                menu_1.style.display = menuVisible ? "none" : "block";
+                menuVisible = !menuVisible;
+            });
 
-    cartButton.addEventListener("click", function(event) {
-        event.stopPropagation();  // Ngăn không cho sự kiện click lan tỏa ra ngoài
-        menu_1.style.display = "none";
-        menu_visible = false;
-        cart.style.right = "0";  // Hiện giỏ hàng
-    });
+            cartButton.addEventListener("click", function(event) {
+                event.stopPropagation();
+                menu_1.style.display = "none";
+                menuVisible = false;
+                cart.style.right = "0";
+            });
 
-    document.addEventListener("click", function() {
-        menu_1.style.display = "none";
-        menu_visible = false;
-        cart.style.right = "-100%";  // Ẩn giỏ hàng
-    });
+            document.addEventListener("click", function() {
+                menu_1.style.display = "none";
+                menuVisible = false;
+                cart.style.right = "-100%";
+            });
 
-    cart.addEventListener("click", function(event) {
-        event.stopPropagation();  // Ngăn không cho sự kiện click lan tỏa ra ngoài
-    });
+            cart.addEventListener("click", function(event) {
+                event.stopPropagation();
+            });
 
-    const closeCartButton = document.querySelector('.fa-xmark');
-    closeCartButton.addEventListener("click", function() {
-        cart.style.right = "-100%";  // Ẩn giỏ hàng
-    });
-    
-            var cartTable = sessionStorage.getItem("cartTable")
-            var totalC = sessionStorage.getItem("totalC")
-            var QR = sessionStorage.getItem("QR")
+            const closeCartButton = document.querySelector('.fa-xmark');
+            if (closeCartButton) {  // Ensure closeCartButton is not null
+                closeCartButton.addEventListener("click", function() {
+                    cart.style.right = "-100%";
+                });
+            }
+
+            // Retrieve items from sessionStorage and update DOM
+            const cartTable = sessionStorage.getItem("cartTable");
+            const totalCost = sessionStorage.getItem("totalC");
+            const qrCode = sessionStorage.getItem("QR");
+
             console.log("Cart Table:", cartTable);
-        console.log("Total Cost:", totalC);
-        console.log("QR Code:", QR);
-            document.querySelector("tbody").innerHTML = cartTable
-            document.querySelector(".tong-tien").value = totalC
-            document.querySelector(".course_qr_img").src = QR
-            
-});
-        </script>
+            console.log("Total Cost:", totalCost);
+            console.log("QR Code:", qrCode);
+
+            if (cartTable) {
+                document.querySelector("tbody").innerHTML = cartTable;
+            }
+            if (totalCost) {
+                document.querySelector(".tong-tien").textContent = totalCost;
+                // document.querySelector(".paid").innerHTML = totalCost; // Consider using textContent if it's just plain text
+            }
+            if (qrCode) {
+                document.querySelector(".course_qr_img").src = qrCode;
+            }
+
+            // Handle form submission
+            document.getElementById("btn-thanh-toan").addEventListener("click", function(event) {
+                event.preventDefault();
+
+                // Clear sessionStorage
+                sessionStorage.removeItem("cartTable");
+                sessionStorage.removeItem("totalC");
+                sessionStorage.removeItem("QR");
+
+                // Clear HTML content
+                document.querySelector("tbody").innerHTML = "";
+                document.querySelector(".tong-tien").value = "0";
+                // document.querySelector(".paid").textContent = "0"; // Use textContent instead of innerHTML for plain text
+
+                document.querySelector(".course_qr_img").src = "";
+
+                // Optionally, provide feedback to the user
+                alert("Xác nhận đã kiểm tra chuyển khoản của khách hàng.");
+            });
+        });
+    </script>
     </body>
     </html>
