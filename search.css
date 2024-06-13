@@ -1,0 +1,279 @@
+/* General styling for links */
+a {
+    text-decoration: none;
+    color: #3e503c;
+}
+
+a:hover {
+    color: white;
+}
+
+/* Header styling */
+header {
+    background-color: #3e503c;
+    color: #f3ecdb;
+}
+
+/* Navbar styling */
+.navbar {
+    padding-right: 80px;
+}
+
+.link-navbar {
+    padding: 10px;
+    color: #f3ecdb;
+}
+
+.logo {
+    padding-left: 40px;
+}
+
+/* Section styling */
+section {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    height: 100vh;
+}
+
+/* Menu list styling */
+.list-menu {
+    background-color: #3e503c;
+    display: block;
+}
+
+.menu {
+    color: #f3ecdb;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.menu:hover {
+    background-color: #7f886a;
+}
+
+.menu a {
+    color: #f3ecdb;
+}
+
+/* List of dishes styling */
+.list-mon {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.test {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10px;
+}
+
+/* Dish text styling */
+.text-mon {
+    padding: 20px 0 10px 20px;
+    margin-bottom: 10px;
+    position: relative;
+    border-top: 1px solid black;
+}
+
+.ten_mon {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.them i {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Special menu styling */
+.menuspecial-menu {
+    background-color: #f3ecdb;
+    text-align: center;
+    padding: 10px 0;
+    color: #3e503c;
+}
+
+.menuspecial-menu a {
+    color: #3e503c;
+}
+
+/* Fix styling */
+.fix {
+    text-align: center;
+    color: #f3ecdb;
+    border-top: 1px solid #f3ecdb;
+    margin: 600px 20px 0 20px;
+}
+
+/* Text styling */
+.text-lau {
+    display: inline;
+}
+
+/* Cart styling */
+.gio-hang {
+    position: fixed;
+    height: 100%;
+    width: 500px;
+    right: -100%;
+    top: 0;
+    background-color: burlywood;
+    padding: 12px 20px;
+    overflow-y: scroll;
+    transition: 0.3s;
+}
+
+.gio-hang h3 {
+    justify-content: center;
+    text-align: center;
+}
+
+.gio-hang table {
+    width: 100%;
+}
+
+.gio-hang button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3e503c;
+    color: #f3ecdb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.gio-hang button:hover {
+    background-color: #7f886a;
+}
+
+/* QR image styling */
+.course_qr_img {
+    width: 200px;
+}
+
+/* Body styling */
+body {
+    background-color: #f3ecdb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #3e503c;
+    color: #f3ecdb;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_pheu_hot_pot {
+    width: 100px;
+    height: auto;
+}
+
+.search_container {
+    display: flex;
+}
+
+.search_container input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search_container button[type="submit"] {
+    background-color: #7f886a;
+    color: #f3ecdb;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dangnhap_dangky {
+    color: #3e503c;
+    font-weight: bold;
+}
+
+/* Food and drink text styling */
+.ten_food_drink {
+    color: #3e503c;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.img_food_drink {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    background-color: #3e503c;
+    color: #f3ecdb;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #7f886a;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #7f886a;
+}
+
+table th:first-child, table td:first-child {
+    border-left: 1px solid #7f886a;
+}
+
+table th:last-child, table td:last-child {
+    border-right: 1px solid #7f886a;
+}
+
+/* Corrected duplicate class name for ten_food_drink */
+.ten_food_drink {
+    color: #3e503c; /* Changed from #f3ecdb to avoid conflict */
+}

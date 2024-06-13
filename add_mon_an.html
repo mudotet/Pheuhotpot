@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add_mon_an.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="add_mon_an.php" method="get">
+        <h1>Thêm Món Ăn</h1>
+        <label for="id_food_drink">ID món ăn :</label>
+        <input type="text" id="id_food_drink" name="id_food_drink">
+        
+        <label for="ten_food_drink">Tên món ăn :</label>
+        <input type="text" id="ten_food_drink" name="ten_food_drink">
+        
+        <label for="gia_food_drink">Giá món ăn :</label>
+        <input type="number" id="gia_food_drink" name="gia_food_drink">
+        
+        <label for="id_loai_food_drink">Id_loại_món_ăn :</label>
+        <select id="id_loai_food_drink" name="id_loai_food_drink">
+            <option value="1">1 - Món mặn</option>
+            <option value="2">2 - Món rau</option>
+            <option value="3">3 - Món ăn đặc sắc</option>
+            <option value="4">4 - Đồ uống</option>
+            <option value="5">5 - Gia vị</option>
+        </select>
+        
+        <label for="fileInput">Image:</label>
+        <input type="file" id="fileInput" name="file">
+        <input type="hidden" name="image" id="fileNameDisplay" readonly>
+        <input type="submit" value="Thêm món ăn">
+        <a style="padding:0;margin:0;color: white" href="lau.php">Quay lại</a>
+    </form>
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function() {
+            var fileName = this.files[0].name;
+            document.getElementById('fileNameDisplay').value = fileName;
+        });
+    </script>
+</body>
+</html>

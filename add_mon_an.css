@@ -1,0 +1,73 @@
+/* add_mon_an.css */
+
+body {
+    background-color: #f3ecdb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3e503c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: #7f886a;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+form h1 {
+    text-align: center;
+    color: #f3ecdb;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+input[type="file"],
+input[type="submit"] {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #3e503c;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+input[type="file"] {
+    background-color: #f3ecdb;
+    color: #3e503c;
+}
+
+input[type="submit"] {
+    background-color: #3e503c;
+    color: #f3ecdb;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2f3e2d;
+}
+
+input[type="file"] {
+    padding: 5px;
+    font-size: 14px;
+}

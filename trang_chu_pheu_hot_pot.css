@@ -1,0 +1,116 @@
+body {
+    background-color: #f3ecdb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #3e503c;
+    color: #f3ecdb;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_pheu_hot_pot {
+    width: 100px;
+    height: auto;
+}
+
+.search_container {
+    display: flex;
+}
+
+.search_container input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search_container button[type="submit"] {
+    background-color: #7f886a;
+    color: #f3ecdb;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dangnhap_dangky {
+    color: #3e503c;
+    font-weight: bold;
+}
+
+.ten_food_drink {
+    color: #3e503c;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.img_food_drink {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+a {
+    color: #7f886a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+button[type="submit"] {
+    background-color: #3e503c;
+    color: #f3ecdb;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #7f886a;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #7f886a; /* Middle color */
+}
+
+.table th:first-child, .table td:first-child {
+    border-left: 1px solid #7f886a; /* Middle color */
+}
+
+.table th:last-child, .table td:last-child {
+    border-right: 1px solid #7f886a; /* Middle color */
+}
+

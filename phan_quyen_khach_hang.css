@@ -1,0 +1,86 @@
+/* phan_quyen.css */
+
+body {
+    background-color: #f3ecdb; /* Màu nền trắng kem */
+    font-family: Arial, sans-serif;
+    color: #3e503c; /* Màu chữ xanh đậm */
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #7f886a; /* Đường viền màu xám xanh */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #3e503c; /* Màu chữ của tiêu đề bảng */
+    font-weight: bold;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #7f886a; /* Đường viền của bảng */
+    text-align: left;
+}
+
+th {
+    background-color: #7f886a; /* Màu nền của tiêu đề cột */
+    color: #f3ecdb; /* Màu chữ của tiêu đề cột */
+}
+
+td {
+    background-color: #f3ecdb; /* Màu nền của các ô dữ liệu */
+    color: #3e503c; /* Màu chữ của các ô dữ liệu */
+}
+
+input[type="submit"] {
+    background-color: #3e503c; /* Màu nền của nút submit */
+    color: #f3ecdb; /* Màu chữ của nút submit */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #7f886a; /* Màu nền của nút submit khi hover */
+}
+
+/* Link styling */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #3e503c; /* Màu chữ của link */
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: #7f886a; /* Màu nền của link */
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #3e503c; /* Màu nền của link khi hover */
+    color: #f3ecdb; /* Màu chữ của link khi hover */
+}
+
+/* Checkbox styling */
+input[type='checkbox'] {
+    transform: scale(1.2);
+    margin-right: 10px;
+}

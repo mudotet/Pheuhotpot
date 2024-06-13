@@ -1,0 +1,88 @@
+/* delete_mon_an.css */
+
+body {
+    background-color: #3e503c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3e503c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+}
+
+form h1 {
+    text-align: center;
+    color: #3e503c;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+caption {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #3e503c;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3e503c;
+    color: #f3ecdb;
+}
+
+tr:nth-child(even) {
+    background-color: #f3ecdb;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    color: #3e503c;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+input[type="submit"] {
+    background-color: #3e503c;
+    color: #f3ecdb;
+    cursor: pointer;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #2f3e2d;
+}

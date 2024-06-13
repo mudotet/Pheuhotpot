@@ -1,0 +1,190 @@
+/*nav*/
+body {
+    background-color: #f3ecdb;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #3e503c;
+    color: #f3ecdb;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo_pheu_hot_pot {
+    width: 100px;
+    height: auto;
+    margin-left: -170px;
+}
+
+.search_container {
+    display: flex;
+}
+
+.search_container input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+}
+
+.search_container button[type="submit"] {
+    background-color: #7f886a;
+    color: #f3ecdb;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dangnhap_dangky {
+    color: #3e503c;
+    font-weight: bold;
+}
+
+.ten_food_drink {
+    color: #3e503c;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.img_food_drink {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+button[type="submit"] {
+    background-color: #3e503c;
+    color: #f3ecdb;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #7f886a;
+}
+
+/*menu-nav*/
+.menu-ul {
+    position:absolute;
+    width:200px;
+    background-color: aliceblue;
+    color:white;
+    background-color:#3e503c;
+    padding: 0;
+    margin: 0;
+    
+}
+.menu-ul{
+    display:none;
+    z-index: 999;
+}
+.menu-ul li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+}
+.menu-li{
+    position:relative;
+    margin-right:-300px;
+    padding-left:100px;
+    margin-bottom:-100px;
+}
+.menu-a{
+    text-decoration:none;
+    color:white;
+    margin-right:100px;
+}
+/*báo cập nhật thành công*/
+.success-message {
+    color: #3e503c;
+    font-weight: bold;
+}
+
+.success-message a {
+    color: #7f886a;
+    text-decoration: none;
+}
+
+.success-message a:hover {
+    text-decoration: underline;
+}
+
+
+/* Form khách hàng */
+.form-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-container h3 {
+    text-align: center;
+    color: #3e503c;
+    margin-bottom: 20px;
+}
+
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #7f886a;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7f886a;
+    color: #f3ecdb;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #5e664a;
+}
+
+
+.form-container a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #7f886a;
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
