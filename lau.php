@@ -349,8 +349,7 @@
             </div>
         </nav></br>
         <div>
-            <?php 
-                // Check if the search form is submitted and perform the search
+            <?php
                 if (isset($_POST['search_food_drink']) && isset($_POST['tim_food_drink'])) {
                     require 'connect.php';
                     $tim_food_drink = $_POST['tim_food_drink'];
@@ -358,7 +357,6 @@
                     $result = $conn->query($sql);
 
                     if ($result->num_rows > 0) {
-                        // Display search results
                         while ($row = $result->fetch_assoc()) {
                             echo "<table>
                                     <caption>Món ăn</caption>
@@ -372,7 +370,7 @@
                                         <td class='ten_food_drink'>" . $row['ten_food_drink'] . "</td>
                                         <td>" . $row['gia_food_drink'] . "</td>
                                         <td><img class='img_food_drink' src='ảnh/" . $row["image"] . "' /></td>
-                                    </tr>"; // Fixed syntax error here
+                                    </tr>"; 
                             }
                             echo "</table>";
                         }
